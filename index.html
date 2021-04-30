@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my email singnature</title>
+    <!-- google font link up -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Source+Serif+Pro:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- css start -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+        color: #fc427b;
+      }
+
+      a:hover {
+        color: #1b9cfc;
+      }
+
+      #img_section {
+        /* border-right: 1px solid rgb(252, 7, 7); */
+        position: relative;
+        animation: my_photo 6s linear 2;
+      }
+
+      @keyframes my_photo {
+        0% {
+          transform: scale(0.3);
+        }
+        100% {
+          transform: scale(1.1);
+        }
+      }
+
+      #img_section img:hover {
+        transform: scale(1.1);
+      }
+
+      h2 {
+        width: 140px;
+        /* background-color: #252839; */
+        text-transform: uppercase;
+        font-size: 19px;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        position: relative;
+        color: #252839;
+        -webkit-text-stroke: -0.7vw #383d52;
+      }
+
+      h2::before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        color: #01fe87;
+        -webkit-text-stroke: -0.7vw #383d52;
+        border-right: 2px solid #01fe87;
+        overflow: hidden;
+        animation: animate 6s linear infinite;
+      }
+
+      @keyframes animate {
+        0%,
+        10%,
+        100% {
+          width: 0;
+        }
+        70%,
+        90% {
+          width: 100%;
+        }
+      }
+
+      #border_right {
+        border-right: 1px solid red;
+      }
+
+      #name {
+        text-transform: capitalize;
+        font-size: 25px;
+        color: tomato;
+        font-family: "Dancing Script", cursive;
+        position: relative;
+        animation-name: pranta;
+        animation-duration: 2s;
+        animation-iteration-count: 5;
+        animation-delay: 1s;
+        animation-direction: alternate;
+      }
+
+      @keyframes pranta {
+        from {
+          left: 0;
+        }
+        to {
+          left: 20px;
+        }
+      }
+
+      #name:hover {
+        /* font-size: 26px; */
+        color: #b33771;
+        text-shadow: ;
+        cursor: pointer;
+      }
+
+      .same_text {
+        margin-top: 10px;
+        font-size: 13px;
+        color: rgb(24, 23, 23);
+        font-family: "Source Serif Pro", serif;
+      }
+
+      #social_link {
+        padding-left: 5px;
+      }
+
+      #social_link img {
+        width: 30px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+
+      #social_link img:hover {
+        transform: scale(1.1);
+      }
+    </style>
+    <!-- css ends -->
+  </head>
+  <body>
+    <table border-collapse="0" border-spacing="0" border="0" collapse="">
+      <tbody>
+        <tr>
+          <td id="img_section" style="width: 150px; padding-right: 10px">
+            <a href="https://www.linkedin.com/feed/"
+              ><img
+                title="Click me !"
+                style="width: 150px"
+                src="https://i.postimg.cc/YSzJX52C/circle.png"
+                alt="circle"
+            /></a>
+          </td>
+          <td id="border_right"></td>
+          <td style="padding-left: 9px">
+            <!-- table two start -->
+            <table
+              border-collapse="0"
+              border-spacing="0"
+              border="0"
+              collapse=""
+            >
+              <!-- skill and name section start -->
+              <tr>
+                <td>
+                  <h2 data-text="web designer" title="Frontend Web Developer">
+                    web designer
+                  </h2>
+                  <span id="name" title="prantabiswas11702@gmail.com"
+                    >pranta biswas</span
+                  ><br />
+                </td>
+              </tr>
+              <!-- skill and name section ends -->
+
+              <!-- address section start -->
+              <tr>
+                <td>
+                  <span class="same_text"
+                    >Learning :
+                    <a href="#" title="Dhanmondi, Dhaka"
+                      >Creative IT institute</a
+                    ></span
+                  >
+                  <br />
+                  <span class="same_text"
+                    >Email : <a href="#">prantabiswas11702@gmail.com</a></span
+                  >
+                  <br />
+                  <span class="same_text">Phone Number : +88 01753311702</span>
+                  <br />
+                </td>
+              </tr>
+              <!-- address section ends -->
+
+              <!-- social link section start -->
+              <tr>
+                <td id="social_link">
+                  <a href="https://www.facebook.com/prantobiswas3357"
+                    ><img
+                      title="Facebook"
+                      src="https://i.postimg.cc/nzdNxqD8/facebook.png"
+                      alt="facebook"
+                  /></a>
+                  <a href="https://mail.google.com/mail/u/0/#inbox"
+                    ><img title="Gmail" src="https://i.postimg.cc/QtNvvfVk/GMail.png" alt="GMail"
+                  /></a>
+                  <a href="https://twitter.com/?lang=en"
+                    ><img
+                      title="Twitter"
+                      src="https://i.postimg.cc/J0vgDmxP/Twitter.png"
+                      alt="Twitter"
+                  /></a>
+                  <a href="https://www.linkedin.com/feed/"
+                    ><img
+                      title="Linkdin"
+                      src="https://i.postimg.cc/cCr2L6Rv/linkdin.webp"
+                      alt="linkdin"
+                  /></a>
+                </td>
+              </tr>
+              <!-- social link section ends -->
+            </table>
+          </td>
+          <!-- <td id="social_link">
+            <img src="images/facebook.png" alt="facebook">
+            <img src="images/GMail.png" alt="GMail">
+            <img src="images/Twitter.png" alt="Twitter">
+          </td> -->
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 
+      font-family: 'Antonio', sans-serif;
+      font-family: 'Dancing Script', cursive;
+      font-family: 'Source Serif Pro', serif;
+      font-family: 'Poppins', sans-serif;
+     -->
+  </body>
+</html>
